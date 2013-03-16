@@ -1,0 +1,29 @@
+parameters:
+  apoutchika_lorem_ipsum.class: Apoutchika\LoremIpsumBundle\Services\LoremIpsum
+  apoutchika_lorem_ipsum.paragraphs.min: 2
+  apoutchika_lorem_ipsum.paragraphs.max: 10
+  apoutchika_lorem_ipsum.sentences.min: 2
+  apoutchika_lorem_ipsum.sentences.max: 6
+  apoutchika_lorem_ipsum.words.min: 2
+  apoutchika_lorem_ipsum.words.max: 30
+  apoutchika_lorem_ipsum.quantity_punctuation: 10
+  apoutchika_lorem_ipsum.lorem_ipsum: NULL
+
+services:
+  apoutchika.lorem_ipsum:
+    class: "%apoutchika_lorem_ipsum.class%"
+    arguments:
+      - "%apoutchika_lorem_ipsum.paragraphs.min%"
+      - "%apoutchika_lorem_ipsum.paragraphs.max%"
+      - "%apoutchika_lorem_ipsum.sentences.min%"
+      - "%apoutchika_lorem_ipsum.sentences.max%"
+      - "%apoutchika_lorem_ipsum.words.min%"
+      - "%apoutchika_lorem_ipsum.words.max%"
+      - "%apoutchika_lorem_ipsum.quantity_punctuation%"
+      - "%apoutchika_lorem_ipsum.lorem_ipsum%"
+    
+  twig.extension.apoutchika.twigloremipsum:
+    class: Apoutchika\LoremIpsumBundle\Twig\ApoutchikaTwigLoremIpsumExtension
+    arguments: ["@apoutchika.lorem_ipsum"]
+    tags:
+      - { name: twig.extension }

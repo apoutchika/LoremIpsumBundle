@@ -128,3 +128,7 @@ apoutchika_lorem_ipsum:
         quam feugiat purus iaculis tristique justo magna at mollis vulputate 
         sem vivamus placerat imperdiet cursus rutrum tincidunt lacus
 
+
+# Licence
+
+See `Resources/meta/LICENSE`.

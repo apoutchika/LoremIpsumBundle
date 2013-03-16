@@ -9,7 +9,7 @@ use Symfony\Bundle\TwigBundle\Loader\FilesystemLoader;
  * ApoutchikaTwigLoremIpsumExtension
  *
  * Extension of twig for the LoremIpsum generator
- * @author Julien Philippon <juphilippon@gmail.com>
+ * @author Julien Philippon <contact@julienphilippon.fr>
  **/
 class ApoutchikaTwigLoremIpsumExtension extends \Twig_Extension
 {

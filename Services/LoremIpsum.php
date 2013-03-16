@@ -6,7 +6,7 @@ namespace Apoutchika\LoremIpsumBundle\Services;
  * LoreIpsum
  * This class generate paragraphs, sentences and words for your development
  *
- * @author Julien Philippon <juphilippon@gmail.com>
+ * @author Julien Philippon <contact@julienphilippon.fr>
  **/
 class LoremIpsum
 {

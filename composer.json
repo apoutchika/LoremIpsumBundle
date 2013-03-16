@@ -1,0 +1,21 @@
+{
+  "name": "apoutchika/loremipsum-bundle",
+  "description": "Generate paragraphs, sentences and words for your development.",
+  "keywords": ["lorem", "ipsum", "fixtures", "data"],
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Julien Philippon",
+      "email": "contact@julienphilippon.fr"
+    }
+  ],
+  "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.0,<2.4-dev"
+  },
+  "autoload": {
+    "psr-0": { "Apoutchika\\LoremIpsumBundle": "" }
+  },
+  "target-dir": "Apoutchika/LoremIpsumBundle"
+}

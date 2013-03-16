@@ -11,7 +11,7 @@ apoutchika_lorem_ipsum:
         min: 2      # Minimum of sentences in a paragraph
         max: 6      # Maximum of sentences in a paragraph
     words:
-        min: 1      # Minimum of words in a sentence
+        min: 2      # Minimum of words in a sentence
         max: 30     # Maximum of words in a sentence
     quantity_punctuation: 10        # Percentage of punctuation in sentences
     lorem_ipsum: >                  # Words used for generate a lorem ipsum

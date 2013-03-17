@@ -12,7 +12,7 @@ Add LoremIpsumBundle in your composer.json
 ``` js
 {
     "require": {
-        "friendsofsymfony/user-bundle": "*"
+        "apoutchika/loremipsum-bundle": "dev-master"
     }
 }
 ```

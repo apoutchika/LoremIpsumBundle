@@ -36,7 +36,7 @@ public function registerBundles()
 
 ``` php
 <?php
-$loremIpsum = $this->get('apoutchika_lorem_ipsum');
+$loremIpsum = $this->get('apoutchika.lorem_ipsum');
 
 // $paragraphs1 content is aleatory number of paragraphs
 $paragraphs = $loremIpsum->getParagraphs();
@@ -49,12 +49,10 @@ $paragraphs3 = $loremIpsum->getParagraphs(2, 8);
 
 
 // Or with sentences :
-
 $sentences = $loremIpsum->getSentences(1, 3); // 1, 2 or 3 sentences
 
 
 // Or with words :
-
 $words = $loremIpsum->getWords (2); // return only two words
 ```
 
@@ -66,11 +64,10 @@ $words = $loremIpsum->getWords (2); // return only two words
 
 // for the customers database :
 
-$liName = $this->get('apoutchika_lorem_ipsum');
-
+$liName = $this->get('apoutchika.lorem_ipsum');
 $liName->setLoremIpsum ('Dupont Dupond Martin Durand Tessier'); // ....
 
-$liFirstName = $this->get('apoutchika_lorem_ipsum');
+$liFirstName = $this->get('apoutchika.lorem_ipsum');
 $liFirstName->setLoremIpsum ('Marie Jean Michel Pierre Philippe'); //...
 
 $user = new User;

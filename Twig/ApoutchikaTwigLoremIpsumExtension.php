@@ -33,9 +33,9 @@ class ApoutchikaTwigLoremIpsumExtension extends \Twig_Extension
      public function getFunctions()
      {
 	  return array(
-	       'paragraphs' => new \Twig_Function_method($this, 'paragraphs', array('is_safe' => array('html'))),
-	       'sentences' => new \Twig_Function_method($this, 'sentences'),
-	       'words' => new \Twig_Function_method($this, 'words'),
+	       new \Twig_SimpleFunction('paragraphs', array ($this, 'paragraphs'), array('is_safe' => array('html'))),
+	       new \Twig_SimpleFunction('sentences', array ($this, 'sentences')),
+	       new \Twig_SimpleFunction('words', array ($this, 'words')),
 	       );
      }
      

@@ -9,7 +9,7 @@ Generate paragraphs, sentences and words for your development
 
 Add LoremIpsumBundle in your composer.json
 
-``` js
+```js
 {
     "require": {
         "apoutchika/loremipsum-bundle": "dev-master"
@@ -19,7 +19,7 @@ Add LoremIpsumBundle in your composer.json
 
 ### Enable the bundle on your kernel
 
-``` php
+```php
 <?php
 // app/AppKernel.php
 
@@ -34,7 +34,7 @@ public function registerBundles()
 
 ## Use it on controller :
 
-``` php
+```php
 <?php
 $loremIpsum = $this->get('apoutchika.lorem_ipsum');
 
@@ -59,7 +59,7 @@ $words = $loremIpsum->getWords (2); // return only two words
 
 ### Set you'r lorem ipsum value
 
-``` php
+```php
 <?php
 
 // for the customers database :
@@ -79,17 +79,17 @@ $user->setFirstName ($liFirstName->getWords(1));
 ## Use it on Twig :
 
 For generate 2 paragraphs :
-``` html+jinja
+```jinja
 {{ paragraphs (2) }}
 ```
 
 For generate 2, 3, 4 or 5 paragraphs :
-``` html+jinja
+```jinja
 {{ paragraphs (2, 5) }}
 ```
 
 For sentences and words: 
-``` html+jinja
+```jinja
 {{ sentences () }}
 {{ words () }}
 ```

@@ -1,8 +1,10 @@
-# Configuration Reference
+ApoutchikaLoremIpsumBundle Configuration Reference
+==================================================
+
+All available configuration options are listed below with their default values.
 
 ``` yaml
 # app/config/config.yml
-
 apoutchika_lorem_ipsum:
     paragraphs:
         min: 2      # Minimum of paragraphs
